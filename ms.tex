@@ -1,0 +1,1100 @@
+%% manuscript produces a one-column, double-spaced document:
+%\documentclass[manuscript]{aastex}
+
+\documentclass{emulateapj}
+\usepackage{apjfonts}
+\usepackage{iondefs}
+%\documentclass[12pt,preprint]{aastex}
+%\usepackage{color}
+%This is how you implement \textcolor{red}{colour} in a LaTeX document.
+%% preprint style produces a one-column, single-spaced document.
+
+%% preprint2 produces a double-column, single-spaced document:
+%\documentclass[preprint2]{aastex}
+
+% personal LaTex mark--ups
+%
+%        **** DO NOT MODIFY BELOW ****   **** DO NOT MODIFY BELOW **** 
+%
+
+%% You can insert a short comment on the title page using the command below.
+%\slugcomment{ApJ Draft }
+\shorttitle{\sc {\MgII}-Absorber Galaxy Masses}
+\shortauthors{\sc Churchill et~al.}
+
+%% This is the end of the preamble.  Indicate the beginning of the
+%% paper itself with \begin{document}.
+
+\begin{document}
+
+%% LaTeX will automatically break titles if they run longer than
+%% one line. However, you may use \\ to force a line break if
+%% you desire.
+
+\title{The Dependence of {\MgII} Absorption on Galaxy Mass}
+
+%% Use \author, \affil, and the \and command to format
+%% author and affiliation information.
+%% Note that \email has replaced the old \authoremail command
+%% from AASTeX v4.0. You can use \email to mark an email address
+%% anywhere in the paper, not just in the front matter.
+%% As in the title, use \\ to force line breaks.
+
+\author{\sc
+Christopher W. Churchill\altaffilmark{2}
+Sebastian Trujillo-Gomez\altaffilmark{1}
+Nikole M. Nielsen\altaffilmark{1}
+and
+Glenn G. Kacprzak\altaffilmark{2,3}
+}
+                                                                                
+\altaffiltext{1}{New Mexico State University, Las Cruces, NM 88003}
+\altaffiltext{2}{Swinburne University of Technology, Victoria 3122, Australia}
+\altaffiltext{3}{Australian Research Council Super Science Fellow}
+
+\begin{abstract}
+
+We present an azimuthal angle bi-modality in the distribution of gas
+around galaxies as traced by {\MgII} absorption: Halo gas prefers to
+
+\end{abstract}
+
+
+
+\keywords{galaxies: halos --- galaxies: intergalactic medium ---
+  quasars: absorption lines}
+
+\section{Introduction}
+\label{sec:intro}
+
+It is well established that {\MgII} absorption, detected in background
+quasar/galaxy spectra, arises from gas associated with foreground
+galaxies and provides a unique means to directly observe mechanisms by
+which galaxies acquire, chemically enrich, recycle, and expel their
+gaseous component \citep[see][for a review]{cwc-china}.  The
+{\MgIIdblt} absorption doublet is an ideal probe since it traces
+low-ionization gas with $10^{16} \leq N(\HI) \leq 10^{22}$~{\cmsq}
+\citep{archiveI,weakII} and, as a result, it is detected out to
+projected galactic radii of $\sim 100$ kpc
+\citep{kacprzak08,chen10a}. A significant quantity of gas is probed by
+{\MgII} absorption, roughly 15\% of the total gas probed by damp Lyman
+alpha absorbers, or 5\% of the total hydrogen in stars
+\citep{kacprzak11c,menard12}.
+
+A large body of evidence now suggests that {\MgII} absorption traces
+both outflows from star forming galaxies
+\citep{bouche06,tremonti07,zibetti07,martin09,weiner09,chelouche10,nestor11,noterdaeme10,bordoloi11,coil11,rubin10,menard12}
+and accretion onto host galaxies
+\citep{steidel02,chen10a,chen10b,kacprzak10a,kacprzak11b,stewart11b,ribaudo11,kacprzak12,rubin12}.
+While it is clear that both processes are occurring, it is difficult
+to disentangle which absorption systems are associated with each
+process.  Comparing both the absorption-line and host galaxy
+metallicity provides a suitable test for each scenario
+\citep[e.g.,][and references therein]{ribaudo11,kacprzak12}, however
+it is not yet feasible to perform this experiment on a large number of
+objects.
+
+Another promising avenue is exploring the relative {\MgII} absorption
+and galaxy geometry/orientation. Modeling the morphologies of 40 {\it
+HST} imaged absorbers, \citet{kacprzak11b} found that the {\MgII} gas
+has co-planer geometry, but is not necessarily disk-like, that is
+coupled to the galaxy inclination. This result provides evidence that
+{\MgII} is probing accretion, consistent with the models of
+\citet{stewart11b}, and not produced by star-burst driven winds.  By
+stacking $\sim4000$ background galaxy spectra, \citet{bordoloi11}
+determined statistically that {\MgII} absorption is stronger along the
+host galaxy minor axis out to $\sim$50~kpc, suggesting winds eject gas
+along the minor axis.  Using only 10 galaxies, \citet{bouche11} showed
+that the galaxy azimuthal orientation with respect to quasar
+sight-lines is bi-modal, indicating that the lines-of-sight probes
+both winds and accretion. This is further validated by
+\citet{churchill12a} who showed that weaker {\MgII} absorption likely
+probes filamentary structures, intermediate strength {\MgII}
+absorption likely probes co-planer accreting material, and the
+strongest absorption primarily probes thick disks and out-of-plane
+wind related and/or tidally disrupted material.
+
+In this {\it Letter}, we explore the azimuthal distribution of all
+published {\MgII} absorbers ($\geq$0.1~\AA) and non-absorbers
+($<$0.1~\AA) around their spectroscopically confirmed host galaxies.
+We compute the cumulative azimuthal angle probability distribution
+function and show that it is bi-model for absorbers and flat for
+non-absorbers. We further study this distribution in terms of galaxy
+colors and equivalent widths. Throughout we adopt a $h=0.70$,
+$\Omega_{\rm M}=0.3$, $\Omega_{\Lambda}=0.7$ cosmology.
+
+%Similarly, in stacked spectra of thousands of local star-
+%forming galaxies from SDSS/DR7, Chen et al. (2010c) showed that the
+%blue-shifted NaD I absorption is stronger within 60deg of the mi- nor
+%axis.
+
+
+\section{The Sample}
+
+
+\section{Galaxy Masses and Virial Radii}
+
+The galaxy virial masses were obtained by performing halo abundance
+matching
+\citep[HAM,][]{kravtsov04,tasitsiomi04,vale04,conroy06,conroy09,guo10,behroozi10,firmani10,trujillo-gomez11,rodriguez-puebla12}
+%(HAM; Kravtsov et al. 2004, Tasitsiomi et al. 2004, Vale \&
+%Ostriker 2004, Conroy et al. 2006, Conroy \& Wechsler 2009, Guo et
+%al. 2010, Behroozi et al. 2010, Firmani et al. 2010, Trujillo-Gomez et
+%al. 2011, Rodriguez-Puebla et al. 2012) 
+of the dark matter (DM) halos in the Bolshoi $N$-body cosmological
+simulation (Klypin et al.  2011) to the luminosity function calculated
+by Wolf et al. (2003) from the COMBO-17 survey as a function of
+redshift. In short, halo abundance matching links the luminosity of
+galaxies to a property of the dark matter halos (such as the mass or
+circular velocity) in a monotonic fashion which reproduces the
+luminosity function by construction.
+
+Following Trujillo-Gomez et al. 2011, we choose the
+maximum circular velocity ( $V_{\rm circ} =
+\sqrt{\frac{GM(<r)}{r}}\Big|_{\rm max}$ ) of the halos since it is a
+direct probe of the depth of the potential well, and contrary to the
+virial mass, it is unambiguously defined for distinct halos as well as
+for subhalos. We refer the reader to Trujillo-Gomez et al. 2011 for
+more details on the procedure. The HAM model contains no free
+parameters and has been extremely successful in reproducing many
+galaxy statistics such as the two-point correlation function as a
+function of redshift (Conroy et al. 2006) and luminosity
+(Trujillo-Gomez et al. 2011), the luminosity-velocity relation, the
+baryonic Tully-Fisher relation, as well as the galaxy velocity
+function (Trujillo-Gomez et al. 2011). In addition, halo abundance
+matching yields galaxy baryon fractions that agree with direct
+estimates from lensing and satellite kinematics within the
+uncertainties in the observations (e.g. Dutton et. al 2011).
+
+The HAM was applied to the Bolshoi dark matter halo catalogs for the
+redshifts corresponding to the five bins (centered at
+z=0.3,0.5,0.7,0.9,1.1, with dz=0.2) used in the calculation of the
+COMBO-17 luminosity function in the r-band. Since some of the galaxies
+in our sample have redshifts z < 0.2, we extended the LF in the bin
+0.2 < z < 0.4 down to z=0, assuming that the luminosity function does
+not evolve significantly from z=0.3 to z=0. This avoids the
+complications of using the ``local'' SDSS luminosity function which
+seems to be incompatible at the bright end with COMBO-17 possibly due
+to the different sensitivity of the two surveys (Wolf et al. 2003).
+
+To obtain a virial mass of each galaxy in the sample, once the HAM
+assigns an r-band luminosity to each DM halo in the catalogs, we
+calculated the average mass of all the halos that fall in a bin with
+$\delta M_{\rm r} = 0.1$ of the measured value for that galaxy. Since
+halo abundance matching is a statistical method, each derived mass
+should be interpreted as the average virial mass of a halo which hosts
+a galaxy with a given luminosity. The intrinsic scatter between virial
+mass and r-band luminosity originates from the scatter in the mass
+vs. circular velocity relation due to the variation in formation times
+of halos of the same mass. This scatter is taken into account and
+shown as the 1-sigma error bars in the virial masses in Figure
+(?). Figure (?) compares the average mass and the scatter calculated
+with two different bin sizes ($\delta M_r = 0.1$ and $\delta M_r =
+0.4$). The luminosity bin size has has virtually no effect on the
+scatter of each mass estimate.
+
+Since the abundance of DM halos is known very precisely in the
+concordance cosmology, the main source of uncertainty in the derived
+masses is the observed luminosity function. To test the range of
+possible systematics in our mass estimates we computed the variation
+in the obtained galaxy virial masses assuming that the observed LF
+evolution is dominated by systematic measurement errors. Figure (?)
+shows the systematic error regions in the luminosity-mass relation
+obtained at two different epochs. Even with this extreme assumption
+about the systematic errors, our results are qualitatively unchanged.
+
+We plot Mvir vs. Mr to the lowest halo mass that is resolved in the
+simulations.  This minimum mass is dictated by the completeness of the
+velocity function (to maximum circular velocity $v>50$ {\kms}) as
+discussed in \citet{trujillo-gomez11} and Klypin et al.  2011.  The
+truncation is at brighter luminosity at higher redshift because of the
+steeper luminosity function at high redshift, i.e., the smallest halo
+mass gets assigned to a brighter galaxy.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\epsscale{1.1}
+\plotone{../Data/MvsW.eps}
+\caption[angle=0]{The galaxy color dependence of the Azimuthal
+distribution of {\MgII}. The solid line (black) is the bi-modal
+distribution of {\MgII} absorption shown in Figure~\ref{fig:main}. The
+color selection was adopted from \citet{chen10a} of $B_{AB}-R_{AB}
+\leq 1.1$ represent late-type galaxies (dashed blue line) and
+$B_{AB}-R_{AB} > 1.1$ are early-type galaxies (dotted red
+line). Star-forming spirals are dominated by outflows. }
+\label{fig:Phi-masses}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\epsscale{1.1}
+\plotone{../Data/MvsW-us.eps}
+\caption[angle=0]{The galaxy color dependence of the Azimuthal
+distribution of {\MgII}. The solid line (black) is the bi-modal
+distribution of {\MgII} absorption shown in Figure~\ref{fig:main}. The
+color selection was adopted from \citet{chen10a} of $B_{AB}-R_{AB}
+\leq 1.1$ represent late-type galaxies (dashed blue line) and
+$B_{AB}-R_{AB} > 1.1$ are early-type galaxies (dotted red
+line). Star-forming spirals are dominated by outflows. }
+\label{fig:Phi-masses}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\acknowledgments 
+
+CWC and NMN were supported through grant HST-GO-11667.01-A provided by
+NASA via the Space Telescope Science Institute, which is operated by
+the Association of Universities for Research in Astronomy (AURA) under
+NASA contract NAS 5-26555.  Some observations were obtained at the
+W.M. Keck Observatory, which is operated as a scientific partnership
+among the California Institute of Technology, the University of
+California and NASA.  The Observatory was made possible by the
+generous financial support of the W.M. Keck Foundation.  Data was also
+from The Sloan Digital Sky Survey (SDSS).  Funding for the SDSS and
+SDSS-II has been provided by the Alfred P. Sloan Foundation, the
+Participating Institutions, the National Science Foundation, the
+U.S. Department of Energy, the National Aeronautics and Space
+Administration, the Japanese Monbukagakusho, the Max Planck Society,
+and the Higher Education Funding Council for England. The SDSS Web
+Site is http://www.sdss.org/. The SDSS is managed by the Astrophysical
+Research Consortium for the Participating Institutions.
+
+
+{\it Facilities:} \facility{HST (WFPC--2)}, \facility{Keck I (HIRES,
+LRIS)}, \facility{VLT (UVES)}, \facility{Sloan (SDSS)}.
+
+
+\appendix
+
+This is the appendix.
+This is the appendix.
+This is the appendix.
+This is the appendix.
+This is the appendix.
+This is the appendix.
+This is the appendix.
+This is the appendix.
+This is the appendix.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}
+\epsscale{1.1}
+\plotone{../Data/Test-Actual/results/actual.eps}
+\caption[angle=0]{The galaxy color dependence of the Azimuthal
+distribution of {\MgII}. The solid line (black) is the bi-modal
+distribution of {\MgII} absorption shown in Figure~\ref{fig:main}. The
+color selection was adopted from \citet{chen10a} of $B_{AB}-R_{AB}
+\leq 1.1$ represent late-type galaxies (dashed blue line) and
+$B_{AB}-R_{AB} > 1.1$ are early-type galaxies (dotted red
+line). Star-forming spirals are dominated by outflows. }
+\label{fig:Phi-masses}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{thebibliography}{}
+
+\bibitem[Behroozi, Conroy, \& Wechsler(2010)Behroozi{\etal}]{behroozi10} 
+Behroozi, P.~S., Conroy, C., \& Wechsler, R.~H.\ 2010, \apj, 717, 379
+
+\bibitem[Conroy {\etal}(2006)]{conroy06} Conroy, C., Wechsler, R.~H.,
+\& Kravtsov, A.~V.\ 2006, \apj, 647, 201
+
+\bibitem[Conroy \& Wechsler(2009)]{conroy09} Conroy, C., \&
+Wechsler, R.~H.\ 2009, \apj, 696, 620
+
+\bibitem[Guo {\etal}(2010)]{guo10} Guo, Q., White, S., Li, C., 
+\& Boylan-Kolchin, M.\ 2010, \mnras, 404, 1111 
+
+\bibitem[Firmani {\etal}(2010)]{firmani10} Firmani, C., Avila-Reese,
+V., \& Rodr{\'{\i}}guez-Puebla, A.\ 2010, \mnras, 404, 1100
+
+\bibitem[Kravtsov {\etal}(2004)]{kravtsov04} Kravtsov, A.~V., Berlind,
+A.~A., Wechsler, R.~H., et al.\ 2004, \apj, 609, 35
+
+\bibitem[Nielsen, Churchill, \& Kacprzak(2012)]{nielsen12}
+Nielsen, N. M., Churchill, C.~W., \& Kacprzak, G.~G. \ 2012, \apjl, in prep
+
+\bibitem[Rodriguez-Puebla {\etal}(2012)]{rodriguez-puebla12} 
+Rodriguez-Puebla, A., Drory, N., \& Avila-Reese, V.\ 2012, arXiv:1204.0804 
+
+\bibitem[Tasitsiomi {\etal}(2004)]{tasitsiomi04} Tasitsiomi, A.,
+Kravtsov, A.~V., Wechsler, R.~H., \& Primack, J.~R.\ 2004, \apj, 614,
+533
+
+\bibitem[Trujillo-Gomez {\etal}(2011)]{trujillo-gomez11}
+Trujillo-Gomez, S., Klypin, A., Primack, J., \& Romanowsky, A.~J.\
+2011, \apj, 742, 16
+
+\bibitem[Vale \& Ostriker(2004)]{vale04} Vale, A., \& Ostriker, J.~P.\
+2004, \mnras, 353, 189
+
+
+%\bibitem[Adelberger {\etal}(2003)]{adelberger03} 
+%Adelberger, K.~L., Steidel, C.~C., Shapley, A.~E., \& Pettini, M. 2003, ApJ, 584, 45 
+
+%\bibitem[Asplund {\etal}(2009)]{asplund09} Asplund, M., Grevesse, N.,
+%Sauval, A.~J., \& Scott, P.\ 2009, \araa, 47, 481
+
+%\bibitem[Bahcall et al.(1993)]{bachall93} 
+%Bahcall, J.~N., Bergeron, J., Boksenberg, A., et al.\ 1993, \apjs, 87, 1
+
+%\bibitem[Bahcall et al.(1996)]{bahcall96} 
+%Bahcall, J.~N., Bergeron, J., Boksenberg, A., et al.\ 1996, \apj, 457, 19
+
+%\bibitem[Barlow(2003)]{barlow03} 
+%Barlow, R.\ 2003, arXiv:physics/0306138
+
+%\bibitem[Barton \& Cooke(2009)]{barton09} 
+%Barton, E.~J., \& Cooke, J.\ 2009, AJ, 138, 1817
+
+%\bibitem[Bechtold et al.(2001)]{bechtold01} 
+%Bechtold, J., Siemiginowska, A., Aldcroft, T.~L., Elvis, M., \&
+%Dobrzycki, A.\ 2001, ApJ, 562, 133
+
+%\bibitem[Bergeron(1986)]{bergeron86} 
+%Bergeron, J.\ 1986, A\&A, 155, L8 
+
+%\bibitem[Bergeron(1988)]{bergeron88} Bergeron, J.\ 1988, Large 
+%Scale Structures of the Universe, 130, 343 
+
+%\bibitem[Bergeron \& Boiss\'{e}(1991)]{bb91}
+%Bergeron, J., \& Boiss\'{e}, P. 1991, A\&A, 243, 334
+
+%\bibitem[Bergeron, Cristiani, \& Shaver(1992)]{bergeron92}
+%Bergeron, J., Cristiani, S., \& Shaver, P. A. 1992, A\&A, 257, 417
+
+%\bibitem[Bergeron \&  Stas\'{i}nska(1986)]{bergeron86}
+%Bergeron, J. \& Stas\'{i}nska, G. 1986, A\&A, 169, 1
+
+%\bibitem[Bond {\etal}(2001a)]{bond01a}
+%Bond, N. A., Churchill, C. W., Charlton, J. C., \& Vogt, S. S. 2001, ApJ, 557, 761
+
+%\bibitem[Bond {\etal}(2001)]{bond01}
+%Bond, N. A., Churchill, C. W., Charlton, J. C., \& Vogt, S. S. 2001, ApJ, 562, 641
+
+%\bibitem[Bechtold \& Ellingson(1992)]{bechtold92} 
+%Bechtold, J., \& Ellingson, E.\ 1992, ApJ, 396, 20
+
+%\bibitem[Bertin \& Arnouts(1996)]{bertin96}
+%Bertin, E., \& Arnouts, S. 1996, A\&AS, 117, 393
+
+%\bibitem[Bordoloi {\etal}(2011)]{bordoloi11} 
+%Bordoloi, R., Lilly, S.~J., Knobel, C., {\etal} 2011, arXiv:1106.0616
+
+%\bibitem[Bouch\'{e} {\etal}(2011)]{bouche11}
+%Bouch\'{e}, N., Hohensee, W., Vargas, R., Kacprzak, G. G., Martin,
+%C. L., Cooke, J., \& Churchill, C. W. 2011, arXiv1110.5877
+
+%\bibitem[Bouch\'{e} {\etal}(2006)]{bouche06}
+%Bouch\'{e}, N., Murphy, M. T., P\'{e}roux, C., Csabai, I. \& Wild. V. 2006 MNRAS, 371, 495
+
+%\bibitem[Bouch{\'e} et al.(2007)]{bouche07} 
+%Bouch{\'e}, N., Murphy, M.~T., P{\'e}roux, C., Davies, R., Eisenhauer,
+%F., F{\"o}rster Schreiber, N.~M., \& Tacconi, L.\ 2007, ApJL, 669, L5
+
+%\bibitem[Bowen et al.(2005)]{bowen05} 
+%Bowen, D.~V., Jenkins, E.~B., Pettini, M., \& Tripp, T.~M.\ 2005,
+%ApJ, 635, 880
+
+%\bibitem[Brooks et al.(2009)]{brooks09} 
+%Brooks, A.~M., Governato, F., Quinn, T., Brook, C.~B., \& Wadsley, J.\
+%2009, \apj, 694, 396
+
+%\bibitem[Bruzual \& Charlot(2003)]{bruzual03} 
+%Bruzual, G., \& Charlot, S.\ 2003, \mnras, 344, 1000
+
+%\bibitem[Bryan \& Norman(1998)]{bryan98} 
+%Bryan, G.~L., \& Norman, M.~L.\ 1998, \apj, 495, 80
+
+%\bibitem[Burkert \& Lin(2000)]{burkert00}
+%Burkert, A., \& Lin, D.~N.~C.\ 2000, ApJ, 537, 270
+
+%\bibitem[Carilli et al.(1996)]{carilli96} 
+%Carilli, C.~L., Lane, W., de Bruyn, A.~G., Braun, R., \& Miley, G.~K.\
+%1996, AJ, 111, 1830
+
+%\bibitem[Ceverino et al.(2010)]{ceverino10} 
+%Ceverino, D., Dekel, A., \& Bournaud, F.\ 2010, \mnras, 404, 2151
+
+%\bibitem[Chabrier(2003)]{chabrier03} 
+%Chabrier, G.\ 2003, \pasp, 115, 763
+
+%\bibitem[Charlton \& Churchill(1996)]{cc96}
+%Charlton, J.~C., \& Churchill, C.~W. 1996, ApJ, 465, 631
+
+%\bibitem[Chelouche \& Bowen(2010)]{chelouche10}
+%Chelouche, D., \& Bowen, D.~V.\ 2010, \apj, 722, 1821 
+
+%\bibitem[Chelouche et al.(2008)]{chelouche08} 
+%Chelouche, D., M{\'e}nard, B., Bowen, D.~V., \& Gnat, O.\ 2008, ApJ,
+%683, 55
+
+%\bibitem[Chen {\etal}(2010)]{chen10a} 
+%Chen, H.-W., Helsby, J.~E., Gauthier, J.-R., Shectman, S.~A.,
+%Thompson, I.~B., \& Tinker, J.~L.\ 2010a, \apj, 714, 1521
+
+%\bibitem[Chen et al.(2005)]{chen05} 
+%Chen, H.-W., Kennicutt, R.~C., Jr., \& Rauch, M.\ 2005, ApJ, 620, 703
+
+%\bibitem[Chen \& Lanzetta(2003)]{chen03}
+%Chen, H.-W. \& Lanzetta, K. M. 2003, ApJ, 597, 706
+
+%\bibitem[Chen et al.(2001)]{chen01} 
+%Chen, H.-W., Lanzetta, K.~M., \& Webb, J.~K.\ 2001, \apj, 556, 158
+
+%\bibitem[Chen \& Tinker(2008)]{chen08} 
+%Chen, H.-W., \& Tinker, J.~L.\ 2008, ApJ, 687, 745 
+
+%\bibitem[Chen et al.(2010)]{chen10b} 
+%Chen, H.-W., Wild, V., Tinker, J.~L., et al.\ 2010, \apjl, 724, L176
+
+%\bibitem[Chengalur \& Kanekar(2000)]{chengalur00} 
+%Chengalur, J.~N., \& Kanekar, N.\ 2000, MNRAS, 318, 303
+
+%\bibitem[Chun {\etal}(2006)]{chun06} Chun, M.~R., Gharanfoli, 
+%S., Kulkarni, V.~P., \& Takamiya, M.\ 2006, AJ, 131, 686 
+
+%\bibitem[Churchill(1997)]{cwcthesis} 
+%Churchill, C. W. 1997, Ph.D. Thesis, University of California, Santa
+%Cruz
+
+%\bibitem[Churchill \& Le~Brun(1998)]{cl98}
+%Churchill, C. W., \& Le Brun, V. 1998, ApJ, 499, 677
+
+%\bibitem[Churchill(2012c)]{churchill12c} 
+%Churchill, C. W. 2012, apJ, in prep
+
+%\bibitem[Churchill {\etal}(2012b)]{churchill12b} 1317
+%Churchill et al. to be submitted.
+
+%\bibitem[Churchill, Kacprzak, \& Steidel(2005)]{cwc-china}
+%Churchill, C. W., Kacprzak, G. G., \& Steidel, C. C. 2005, in {\it
+%Probing Galaxies through Quasar Absorption Lines}, IAU 199
+%Proceedings, eds.\ P. R. Williams, C.--G. Shu, \& B. M\'{e}nard
+%(Cambridge: Cambridge University Press), p.\ 24
+
+%\bibitem[Churchill {\etal}(2012a)]{churchill12a}
+%Churchill, C.~W., Kacprzak, G.~G., Nielsen, N. M., Steidel, C.~C., \&
+%Murphy, M.~T.\ 2012, \apj, submitted
+
+%\bibitem[Churchill {\etal}(2007)]{churchill07}
+%Churchill, C. W., Kacprzak, G. G., Steidel, C. C. \& Evans, J. L. 2007, ApJ, 661, 714
+
+%\bibitem[Churchill {\etal}(2000a)]{archiveI}
+%Churchill, C. W., Mellon, R. R., Charlton, J. C., Jannuzi, B. T.,
+%Kirhakos, S., Steidel, C. C., \& Schneider, D. P. 2000a, ApJS, 130, 91
+
+%\bibitem[Churchill {\etal}(2000b)]{archiveII}
+%Churchill, C. W., Mellon, R. R., Charlton, J. C., Jannuzi, B. T.,
+%Kirhakos, S., Steidel, C. C., \& Schneider, D. P. 2000b, ApJ, 543, 577
+
+%\bibitem[Churchill {\etal}(1999)]{weakI}
+%Churchill, C. W., Rigby, J. R., Charlton, J. C., \& Vogt, S. S. 1999, ApJS, 120, 51
+
+%\bibitem[Churchill \& Steidel(2003)]{cs03} 
+%Churchill, C., \& Steidel, C.\ 2003, The IGM/Galaxy Connection.~The
+%Distribution of Baryons at z=0, 281, 149
+
+%\bibitem[Churchill, Steidel, \& Vogt(1996)]{csv96}
+%Churchill, C. W., Steidel, C. C., \& Vogt, S. S. 1996, ApJ, 471, 164
+
+%\bibitem[Churchill \& Vogt(2001)]{cv01}
+%Churchill, C. W., \& Vogt, S. S. 2001, AJ, 122, 679 
+
+%\bibitem[Churchill, Vogt, \& Charlton(2001)]{cvc03}
+%Churchill, C. W., Vogt, S. S., \& Charlton, J. C. 2003, AJ, 125, 98 
+
+%\bibitem[Coil et al.(2011)]{coil11} 
+%Coil, A.~L., Weiner, B.~J., Holz, D.~E., et al.\ 2011, \apj, 743, 46
+
+%\bibitem[Cooksey et al.(2008)]{cooksey08}
+% Cooksey, K.~L., Prochaska, J.~X., Chen, H.-W., Mulchaey, J.~S., \&
+%Weiner, B.~J.\ 2008, \apj, 676, 262
+
+%\bibitem[Curran et al.(2005)]{curran05} 
+%Curran, S.~J., Murphy, M.~T., Pihlstr{\"o}m, Y.~M., Webb, J.~K., \&
+%Purcell, C.~R.\ 2005, MNRAS, 356, 1509
+
+%\bibitem[Chynoweth et al.(2008)]{chynoweth08} 
+%Chynoweth, K.~M., Langston, G.~I., Yun, M.~S., Lockman, F.~J., Rubin,
+%K.~H.~R., \& Scoles, S.~A.\ 2008, AJ, 135, 1983
+
+%\bibitem[D'Agonstini(2000)]{d'agostini00a} 
+%D'Agonstini, G.\ 2000, arXiv:physics/0403086
+
+%\bibitem[D'Agonstini \& Raso(2000)]{d'agostini00b} 
+%D'Agonstini, G., \& Raso, M.\ 2000, arXiv:physics/0002056
+
+%\bibitem[Dav{\'e} et al.(1999)]{dave99} 
+%Dav{\'e}, R., Hernquist, L., Katz, N., \& Weinberg, D.~H.\ 1999, \apj,
+%511, 521
+
+%\bibitem[Dekel \& Birnboim(2006)]{dekel06} 
+%Dekel, A., \& Birnboim, Y.\ 2006, \mnras, 368, 2
+
+%\bibitem[Dekel et al.(2009)]{dekel09} 
+%Dekel, A., Birnboim, Y., Engel, G., et al.\ 2009, \nat, 457, 451
+
+%\bibitem[Dekker {\etal}(2000)]{dekker00} 
+%Dekker, H., D'Odorico, S., Kaufer, A. Delabre, B. \& Kotzlowski H. 2000, SPIE, 4008, 534
+
+%\bibitem[Ding, Charlton, \& Churchill(2005)]{ding05}
+%Ding, J., Charlton, J. C., \& Churchill, C. W. 2005, ApJ, 621, 615
+
+%\bibitem[Dixon {\etal}(2010)]{cos-ihb}
+%Dixon, W. V., {\etal} 2010, Cosmic Origins Spectrograph Instrument
+%Handbook, Version 3.0 (Baltimore: STScI)
+
+%\bibitem[Draine(2011)]{draine11} Draine, B.~T.\ 2011, Physics of the
+%Interstellar and Intergalactic Medium, Princeton University Press,
+%ISBN: 978-0-691-12214-4 (Table 1.4, p8)
+
+%\bibitem[Ellison {\etal}(2003)]{ellison03} 
+%Ellison, S.~L., Mall{\'e}n-Ornelas, G., \& Sawicki, M.\ 2003, ApJ,
+% 589, 709
+
+%\bibitem[Erb et al.(2006)]{erb06} 
+%Erb, D.~K., Steidel, C.~C., Shapley, A.~E., Pettini, M., Reddy, N.~A.,
+%\& Adelberger, K.~L.\ 2006, ApJ, 646, 107
+
+%\bibitem[Faber {\etal}(2007)]{faber07} 
+%Faber, S.~M., et al.\ 2007, ApJ, 665, 265
+
+%\bibitem[Faucher-Gigu{\`e}re et al.(2011)]{faucher-giguere11} 
+%Faucher-Gigu{\`e}re, C.-A., Kere{\v s}, D., 
+%\& Ma, C.-P.\ 2011, \mnras, 417, 2982 
+
+%\bibitem[Ferland et al.(1998)]{ferland98} 
+%Ferland, G.~J., Korista, K.~T., Verner, D.~A., et al.\ 1998, \pasp, 110, 761
+
+%\bibitem[Woods {\etal}(2006)]{woods06} 
+%Woods, D.~F., Geller, M.~J., \& Barton, E.~J.\ 2006, AJ, 132, 197 
+
+%\bibitem[Fraternali {\etal}(2002)]{fraternali02}
+%Fraternali, F., van Moorsel, G., Sancisi, R., \& Oosterloo, T. 2002,
+%AJ, 123, 312
+
+%\bibitem[Fukugita, Shimasaku, \& Ichikawa(1995)]{fukugita95}
+%Fukugita, M., Shimasaku, K., \& Ichikawa, T. 1995, PASP, 107, 945 
+
+%\bibitem[Fumagalli et al.(2011)]{fumagalli11} Fumagalli, M., 
+%Prochaska, J.~X., Kasen, D., et al.\ 2011, \mnras, 418, 1796 
+
+%\bibitem[Guillemin \& Bergeron(1997)]{gb97}
+%Guillemin p., \& Bergeron, J. 1997, A\&A, 328, 499
+
+%\bibitem[Haehnelt et al.(1998)]{haehnelt98} 
+%Haehnelt, M.~G., Steinmetz, M., \& Rauch, M.\ 1998, ApJ, 495, 647
+
+%\bibitem[Haardt \& Madau(2011)]{haardt11} Haardt, F., \& Madau, P.\
+%2011, ApJ, arXiv:1105.2039
+
+%\bibitem[Herbert-Fort et al.(2006)]{herbert-fort06} 
+%Herbert-Fort, S., Prochaska, J.~X., Dessauges-Zavadsky, M., Ellison,
+%S.~L., Howk, J.~C., Wolfe, A.~M., \& Prochter, G.~E.\ 2006, \pasp,
+%118, 1077
+
+%\bibitem[Hewitt \& Burbidge(1993)]{hb93}
+%Hewitt, A., \& Burbidge, G. 1993, ApJS, 87, 451 (HB93)
+
+%\bibitem[Heckman(2002)]{heckman02} 
+%Heckman, T.~M.\ 2002, Extragalactic Gas at Low Redshift, 254, 292
+
+%\bibitem[Heckman(2003)]{heckman03} 
+%Heckman, T.~M.\ 2003, Revista Mexicana de Astronomia y Astrofisica
+%Conference Series, 17, 47
+
+%\bibitem[Holweger(2001)]{holweger01} 
+%Holweger, H.\ 2001, Joint SOHO/ACE workshop ''Solar and Galactic
+%Composition'', 598, 23
+
+%\bibitem[Jannuzi et al.(1998)]{jannuzi98} 
+%Jannuzi, B.~T., Bahcall, J.~N., Bergeron, J., et al.\ 1998, \apjs, 118, 1
+
+%\bibitem[Jenkins {\etal}(2005)]{jenkins05}
+%Jenkins, E.B., Bowen, D.V., Tripp, T.M., \& Sembach, K.R. 2005, ApJ, 623, 767
+
+%\bibitem[Kacprzak \& Churchill(2011)]{kacprzak11c} 
+%Kacprzak, G.~G., \& Churchill, C.~W.\ 2011c, \apjl, 743, L34
+
+%\bibitem[Kacprzak {\etal}(2011a)]{kacprzak11a} 
+% Kacprzak, G.~G., Churchill, C.~W., Barton, E.~J., \& Cooke, J.\ 2011a,
+%\apj, 733, 105
+
+%\bibitem[Kacprzak {\etal}(2010a)]{kacprzak10a} 
+%Kacprzak, G.~G., Churchill, C.~W., Ceverino, D., Steidel, C.~C.,
+%Klypin, A., \& Murphy, M.~T.\ 2010a, ApJ, 711, 533
+
+%\bibitem[Kacprzak {\etal}(2011b)]{kacprzak11b} 
+%Kacprzak, G.~G., Churchill, C.~W., Evans, J.~L., Murphy, M.~T., \&
+%Steidel, C.~C.\ 2011b, \mnras, 416, 3118 
+
+%\bibitem[Kacprzak et al.(2010b)]{kacprzak10b} 
+%Kacprzak, G.~G., Murphy, M.~T., \& Churchill, C.~W.\ 2010, \mnras, 406, 445
+
+%\bibitem[Kacprzak {\etal}(2008)]{kacprzak08} 
+%Kacprzak, G.~G., Churchill, C.~W., Steidel, C.~C., \& Murphy, M.~T.\
+%2008, AJ, 135, 922
+
+%\bibitem[Kacprzak {\etal}(2007)]{kacprzak07} 
+%Kacprzak, G. G., Churchill, C. W., Steidel, C. C., Murphy, M. T., \& Evans, J. L 2007, ApJ, 662, 909 
+
+%\bibitem[Kacprzak {\etal}(2012)]{kacprzak12} 
+%Kacprzak, G. G., Churchill, C. W., Steidel, C. C., Spitler, L. R., \&
+%Holtzman, J. A. 2012, MNRAS, submitted
+
+%\bibitem[Kanekar \& Chengalur(2001b)]{kanekar01b}
+% Kanekar, N., \& Chengalur, J.~N.\ 2001b, A\&A, 369, 42
+
+%\bibitem[Kanekar \& Chengalur(2001a)]{kanekar01} 
+%Kanekar, N., \& Chengalur, J.~N.\ 2001a, MNRAS, 325, 631
+
+%\bibitem[Kanekar et al.(2009)]{kanekar09} 
+%Kanekar, N., Smette, A., Briggs, F.~H., \& Chengalur, J.~N.\ 2009,
+%ApJl, 705, L40
+
+%\bibitem[Kato, Omachi, \& Aso(2002)]{kato02}
+%Kato, T., Omachi, S., \& Aso, H. 2002, Lect. Notes Comput. Sci. 2396, 405
+
+%\bibitem[Kaufmann et al.(2009)]{kaufmann09} Kaufmann, T., Bullock, 
+%J.~S., Maller, A.~H., Fang, T., \& Wadsley, J.\ 2009, MNRAS, 396, 191 
+
+%\bibitem[Kere{\v s} et al.(2009)]{keres09} 
+%Kere{\v s}, D., Katz, N., Fardal, M., Dav{\'e}, R., \& Weinberg,
+%D.~H.\ 2009, \mnras, 395, 160
+
+%\bibitem[Kere{\v s} et al.(2005)]{keres05} 
+%Kere{\v s}, D., Katz, N., Weinberg, D.~H., \& Dav{\'e}, R.\ 2005,
+%\mnras, 363, 2
+
+%\bibitem[Kewley et al.(2004)]{kewley04} 
+%Kewley, L.~J., Geller, M.~J., \& Jansen, R.~A.\ 2004, AJ, 127, 2002
+
+%\bibitem[Kewley et al.(2002)]{kewley02} 
+%Kewley, L.~J., Geller, M.~J., Jansen, R.~A., \& Dopita, M.~A.\ 2002,
+%AJ, 124, 3135
+
+%\bibitem[Kim, Goobar, \& Perlmutter(1996)]{kim96}
+%Kim, A., Goobar, A., \& Perlmutter, S. 1996, PASP, 108, 190
+
+%\bibitem[Kinney {\etal}(1996)]{kinney96}
+%Kinney, A. L., Calzetti, D., Bohlin, R. C., McQuade, K.,
+%Storchi--Bergmann, T.  \& Schmitt, H. R. 1996, ApJ, 467, 38
+
+%\bibitem[Knierman et al.(2003)]{knierman03} 
+%Knierman, K.~A., Gallagher, S.~C., Charlton, J.~C., Hunsberger, S.~D.,
+%Whitmore, B., Kundu, A., Hibbard, J.~E., \& Zaritsky, D.\ 2003, AJ,
+%126, 1227
+
+%\bibitem[Kobulnicky \& Phillips(2003)]{kobulnicky03}
+%Kobulnicky, H.~A., \& Phillips, A.~C.\ 2003, ApJ, 599, 1031
+
+%\bibitem[Kriss(2011)]{kriss11} 
+%Kriss, G. A., COS Instrument Handbook 2011-01, (Baltimore, STScI)
+
+%\bibitem[Kulkarni et al.(2005)]{kulkarni05} 
+%Kulkarni, V.~P., Fall, S.~M., Lauroesch, J.~T., York, D.~G., Welty,
+%D.~E., Khare, P., \& Truran, J.~W.\ 2005, ApJ, 618, 68
+
+%\bibitem[Lacy et al.(2003)]{lacy03} 
+%Lacy, M., Becker, R.~H., Storrie-Lombardi, L.~J., Gregg, M.~D.,
+%Urrutia, T., \& White, R.~L.\ 2003, AJ, 126, 2230
+
+%\bibitem[Lane {\etal}(1998)]{lane98} 
+%Lane, W., Smette, A., Briggs, F., Rao, S., Turnshek, D., \& Meylan,
+%G.\ 1998, AJ, 116, 26
+
+%\bibitem[Lanzetta \& Bowen(1990)]{lanzetta90}
+%Lanzetta, K.~M., \& Bowen, D.\ 1990, ApJ, 357, 321 
+
+%\bibitem[Lanzetta \& Bowen(1992)]{lanzetta92}   
+%Lanzetta, K. M. \& Bowen, D. V. 1992, ApJ, 391, 48L
+
+%\bibitem[Lanzetta {\etal}(1995)]{lanzetta95} 
+%Lanzetta, K.~M., Bowen, D.~V., Tytler, D., \& Webb, J.~K. 1995, ApJ,
+%442, 538
+
+%\bibitem[Le Brun {\etal}(1993)]{lebrun93} 
+%Le Brun, V., Bergeron, J., Boisse, P., \& Christian, C.\ 1993, A\&A,
+%279, 33
+
+%\bibitem[Lin \& Murray(2000)]{lin00}
+%Lin, D.~N.~C., \& Murray, S.~D.\ 2000, ApJ, 540, 170
+
+%\bibitem[Lin \& Zou(2001)]{lin01} 
+%Lin, W.-P., \& Zou, Z.-L.\ 2001, ChJAA, 1, 21
+
+%\bibitem[Lopez et al.(2008)]{lopez08} 
+%Lopez, S., et al.\ 2008, ApJ, 679, 1144
+
+%\bibitem[Lynds \& Sandage(1963)]{lynds63}
+%Lynds, C. R. \& Sandage, A. R. 1963, ApJ, 137, 1005
+
+%\bibitem[Maller \& Bullock(2004)]{maller04}
+%Maller, A.~H., \& Bullock, J.~S.\ 2004, MNRAS, 355, 694
+
+%\bibitem[Mannucci et al.(2001)]{mannucci01} 
+%Mannucci, F., Basile, F., Poggianti, B.~M., et al.\ 2001, \mnras, 326, 745
+
+%\bibitem[Martin \& Bouch{\'e}(2009)]{martin09} 
+%Martin, C.~L., \& Bouch{\'e}, N.\ 2009, \apj, 703, 1394 
+
+%\bibitem[Matteucci et al.(1997)]{matteucci97} 
+%Matteucci, F., Molaro, P., \& Vladilo, G.\ 1997, A\&A, 321, 45 
+
+%\bibitem[McGaugh(2005)]{mcgaugh05}
+% McGaugh, S.~S.\ 2005, \apj, 632, 859
+
+%\bibitem[M{\'e}nard \& Chelouche(2009)]{menard09b}
+%M{\'e}nard, B., \& Chelouche, D.\ 2009, \mnras, 393, 808
+
+%\bibitem[M{\'e}nard \& Fukugita(2012)]{menard12}
+%M{\'e}nard, B., \& Fukugita, M.\ 2012, arXiv:1204.1978
+
+%\bibitem[Mo \& Miralda-Escude(1996)]{mo96}
+%Mo, H.~J., \& Miralda-Escude, J.\ 1996, ApJ, 469, 589
+
+%\bibitem[M{\o}ller et al.(2002)]{moller02} 
+%M{\o}ller, P., Warren, S.~J., Fall, S.~M., Fynbo, J.~U., \& Jakobsen,
+%P.\ 2002, ApJ, 574, 51
+
+%\bibitem[Moster et al.(2010)]{moster10} 
+%Moster, B.~P., Somerville, R.~S., Maulbetsch, C., et al.\ 2010, \apj,
+%710, 903
+
+%\bibitem[Mulchaey \& Zabludoff(1998)]{mulchaey98} 
+%Mulchaey, J.~S., \& Zabludoff, A.~I.\ 1998, ApJ, 496, 73
+
+%\bibitem[Masiero {\etal}(2005)]{joe05} 
+%Masiero, J. R., Charlton, J. C., Ding, J., Churchill, C. W., \&
+%Kacprzak, G. G. 2005, ApJ, 623, 57
+
+%\bibitem[Milutinovi\'{c} {\etal}(2005)]{nikola05}
+%Milutinovi\'{c}, N., Rigby, J. R., Masiero, J. R., Ryan, R. S., Palma,
+%C., \& Charlton, J. C. 2005, ApJ, submitted, (astro--ph/0512238)
+
+%\bibitem[Mo \& Mao(2002)]{mo02}
+%Mo, H.~J., \& Mao, S. 2002, MNRAS, 333, 768 
+
+%\bibitem[Mo \& Miralda-Escude(1996)]{mo96} 
+%Mo, H.~J., \& Miralda-Escude, J.\ 1996, ApJ, 469, 589
+
+%\bibitem[Monet {\etal}(1998)]{usno2}
+%Monet, D., {\etal} 1998, USNO--SA2.0: A Catalog of Astrometric
+%Standards (Washington: US Nav. Obs.)
+
+%\bibitem[Narayanan {\etal}(2005)]{anand05}
+%Narayanan, A, Charlton, J. C., Masiero, J. R., \& Lynch, R. 2005, ApJ,
+%632, 92
+
+%\bibitem[Narayanan et al.(2007)]{narayanan07} 
+%Narayanan, A., Misawa, T., Charlton, J.~C., \& Kim, T.-S.\ 2007, ApJ,
+%660, 1093
+
+%\bibitem[Narayanan et al.(2008)]{narayanan08} 
+%Narayanan, A., Charlton, J.~C., Misawa, T., Green, R.~E., \& Kim,
+%T.-S.\ 2008, ApJ, 689, 782
+
+%\bibitem[Nestor {\etal}(2011)]{nestor11} 
+%Nestor, D.~B., Johnson, B.~D., Wild, V., {\etal} 2011, \mnras, 412, 1559
+
+%\bibitem[Nestor {\etal}(2005)]{nestor05} 
+%Nestor, D.~B., Turnshek, D.~A., \& Rao, S.~M.\ 2005, ApJ, 628, 637 
+
+%\bibitem[Nestor {\etal}(2002)]{nestor02} 
+%Nestor, D.~B., Rao, S.~M., Turnshek, D.~A., Monier, E., Lane, W.~M.,
+%\& Bergeron, J.\ 2002, Extragalactic Gas at Low Redshift, 254, 34
+
+%\bibitem[Nestor et al.(2007)]{nestor07} 
+%Nestor, D.~B., Turnshek, D.~A., Rao, S.~M., \& Quider, A.~M.\ 2007,
+%ApJ, 658, 185
+
+%\bibitem[Noterdaeme {\etal}(2010)]{noterdaeme10} 
+%Noterdaeme, P., Srianand, R., \& Mohan, V.\ 2010, \mnras, 403, 906
+
+%\bibitem[Ocvirk et al.(2008)]{ocvirk08} 
+%Ocvirk, P., Pichon, C., \& Teyssier, R.\ 2008, \mnras, 390, 1326
+
+%\bibitem[Oppenheimer et al.(2010)]{oppenheimer10} 
+%Oppenheimer, B.~D., Dav{\'e}, R., Kere{\v s}, D., et al.\ 2010,
+%\mnras, 406, 2325
+
+%\bibitem[Padilla et al.(2009)]{padilla09} 
+%Padilla, N., Lacerna, I., Lopez, S., Barrientos, L.~F., Lira, P.,
+%Andrews, H., \& Tejos, N.\ 2009, MNRAS, 395, 1135
+
+%\bibitem[P{\'e}roux et al.(2011)]{peroux11} 
+%P{\'e}roux, C., Bouch{\'e}, N., Kulkarni, V.~P., York, D.~G., \&
+%Vladilo, G.\ 2011, \mnras, 410, 2237
+
+%\bibitem[Pettini \& Pagel(2004)]{pettini04} 
+%Pettini, M., \& Pagel, B.~E.~J.\ 2004, MNRAS, 348, L59
+
+%\bibitem[Pollack et al.(2009)]{pollack09} 
+%Pollack, L.~K., Chen, H.-W., Prochaska, J.~X., \& Bloom, J.~S.\ 2009,
+%ApJ, 701, 1605
+
+%\bibitem[Prochaska(2006)]{prochaska06} 
+%Prochaska, J.~X.\ 2006, \apj, 650, 272
+
+%\bibitem[Prochaska et al.(2002)]{prochaska02} 
+%Prochaska, J.~X., Ryan-Weber, E., \& Staveley-Smith, L.\ 2002, PASP,
+%114, 1197
+
+%\bibitem[Prochaska \& Wolfe(1998)]{prochaska98} 
+%Prochaska, J.~X., \& Wolfe, A.~M.\ 1998, ApJ, 507, 113 
+
+%\bibitem[Prochaska \& Wolfe(1997)]{prochaska97} 
+%Prochaska, J.~X., \& Wolfe, A.~M.\ 1997, ApJ, 487, 73
+
+%\bibitem[Puche {\etal}(1992)]{puche92}
+%Puche, D., Westpfahl, D., Brinks, E., \& Roy, J. 1992, AJ, 103, 1841
+
+%\bibitem[Rand(2000)]{rand00} 
+%Rand, R. 2000, ApJ, 537, 13                 
+
+%\bibitem[Rao et al.(2006)]{rao06} 
+%Rao, S.~M., Turnshek, D.~A., \& Nestor, D.~B.\ 2006, ApJ, 636, 610
+
+%\bibitem[Rao {\etal}(2003)]{rao03}
+%Rao, S.~M., Nestor, D.~B., Turnshek, D.~A., Lane, W.~M., Monier,
+%E.~M., \& Bergeron, J.\ 2003, ApJ, 595, 94
+
+%\bibitem[Rao \& Turnshek(2000)]{rao00} 
+%Rao, S.~M., \& Turnshek, D.~A.\ 2000, ApJS, 130, 1 
+
+%\bibitem[Ribaudo et al.(2011)]{ribaudo11} 
+%Ribaudo, J., Lehner, N., Howk, J.~C., et al.\ 2011, \apj, 743, 207
+
+%\bibitem[Rigby, Charlton, \& Churchill(2002)]{weakII}
+%Rigby, J. R., Charlton, J. C., \& Churchill, C. W. 2002, ApJ, 565, 743
+
+%\bibitem[Rubin et al.(2012)]{rubin12} 
+%Rubin, K.~H.~R., Prochaska, J.~X., Koo, D.~C., \& Phillips, A.~C.\
+%2012, \apjl, 747, L26
+
+%\bibitem[Rubin {\etal}(2010)]{rubin10}
+% Rubin, K.~H.~R., Weiner, B.~J., Koo, D.~C., {\etal} 2010, \apj, 719, 1503
+
+%\bibitem[Rubin {\etal}(2010)]{rubin10a} 
+%Rubin, K.~H.~R., Prochaska, J.~X., Koo, D.~C., Phillips, A.~C., \&
+%Weiner, B.~J.\ 2010, \apj, 712, 574
+
+%\bibitem[Sancisi et al.(2008)]{sancisi08} 
+%Sancisi, R., Fraternali, F., Oosterloo, T., \& van der Hulst, T.\ 2008, A\&A Rev., 15, 189 
+
+%\bibitem[Savage \& Sembach(1991)]{savage91} 
+%Savage, B.~D., \& Sembach, K.~R.\ 1991, \apj, 379, 245
+
+%\bibitem[Savage, Tripp, \& Lu(1998)]{savage98}
+%Savage, B. D., Tripp, T. M. \& Lu, L. 1998, AJ, 115, 436
+
+%\bibitem[Savaglio et al.(2005)]{savaglio05} 
+%Savaglio, S., Glazebrook, K., Le Borgne, D., et al.\ 2005, \apj, 635,
+%260
+
+%\bibitem[Schlegel et al.(1998)]{schlegel98} 
+%Schlegel, D.~J., Finkbeiner, D.~P., \& Davis, M.\ 1998, \apj, 500, 525
+
+%\bibitem[Schneider {\etal}(1993)]{schneider93}
+%Schneider, D. P., {\etal} 1993, ApJS, 87, 45
+
+%\bibitem[Sheinis {\etal}(2002)]{sheinis02}
+%Sheinis, A. I., Bolte, M., Epps, H. W., Kibrick, R. I., Miller, J. S.,
+%Radovan, M. V., Bigelow, B. C., \& Sutin, B. M. 2002, PASP. 114, 851
+
+%\bibitem[Siemiginowska et al.(2002)]{siemiginowska02} 
+%Siemiginowska, A., Bechtold, J., Aldcroft, T.~L., Elvis, M., Harris,
+%D.~E., \& Dobrzycki, A.\ 2002, ApJ, 570, 543
+
+%\bibitem[Siemiginowska et al.(2007)]{siemiginowska07} 
+%Siemiginowska, A., Stawarz, {\L}., Cheung, C.~C., Harris, D.~E.,
+%Sikora, M., Aldcroft, T.~L., \& Bechtold, J.\ 2007, ApJ, 657, 145
+
+%\bibitem[Simard {\etal}(2002)]{simard02}
+%Simard, L., Willmer, C. N. A., Vogt, N. P., Sarajedini, V. L.,
+%Philips, A. C., Weiner, B. J., Koo, D. C., Im, M., Illingworth, G. D.,
+%\& Faber, S. M. 2002, ApJS, 142, 1
+
+%\bibitem[Skrutskie et al.(2006)]{skrutskie06} 
+%Skrutskie, M.~F., Cutri, R.~M., Stiening, R., et al.\ 2006, \aj, 131,
+%1163
+
+%\bibitem[Spinrad {\etal}(1993)]{spinrad93}
+%Spinrad, H., Filippenko, A. V., Yee, H. K., Ellingson, E., Blades, J. C.,
+%Bahcall, J. N.; Jannuzi, B. T.; Bechtold, J., \& Dobrzycki, A. 1993 AJ,
+%106, 1
+
+%\bibitem[Spolaor {\etal}(2010)]{spolaor10} 
+%Spolaor, M., Kobayashi, C., Forbes, D. A., Couch, W. J., \& Hau,
+%G. T. 2010, MNRAS, submitted
+
+%\bibitem[Steidel(1995)]{steidel95}
+%Steidel, C. C. 1995, in QSO Absorption Lines, ed.\ G. Meylan, (Springer--verlag: Berlin
+%Heidelberg), p.\ 139
+
+%\bibitem[Steidel et al.(2010)]{steidel10} 
+%Steidel, C.~C., Erb, D.~K., Shapley, A.~E., et al.\ 2010, \apj, 717,
+%289
+
+%\bibitem[Steidel {\etal}(2002)]{steidel02} 
+%Steidel, C. C., Kollmeier, J. A., Shapely, A. E., Churchill, C. W.,
+%Dickinson, M., \& Pettini, M. 2002, ApJ, 570, 526
+
+%\bibitem[Steidel \& Dickinson(1992)]{sd92}
+%Steidel, C. C., \& Dickinson, M.  ApJ, 394, 81
+
+%\bibitem[Steidel {\etal}(1997)]{s97} 
+%Steidel, C. C., Dickinson, M., Meyer, D. M., Adelberger, K. L., \&
+%Sembach, K. R. 1997, ApJ, 480, 586
+
+%\bibitem[Steidel, Dickinson, \& Persson(1994)]{sdp94}
+%Steidel, C. C., Dickinson, M., \& Persson, S. E.  1994, ApJ, 437, L75
+
+%\bibitem[Steidel \& Sargent(1992)]{ss92}
+%Steidel, C. C., \& Sargent, W. L. W. 1992, ApJs, 80, 1
+
+%\bibitem[Steidel {\etal}(2004)]{steidel04} 
+%Steidel, C.~C., Shapley, A.~E., Pettini, M., Adelberger, K.~L., Erb, D.~K., Reddy, N.~A., \& Hunt, M.~P. 2004, ApJ, 604, 534
+
+%\bibitem[Stetson(1989)]{stetson89}
+%Stetson, P. B. 1989, Advanced School of Astrophysics, (Univerisidade
+%de Sao Paulo), p.\ 1
+
+%\bibitem[Stewart(2011c)]{stewart11c} 
+%Stewart, K.~R.\ 2011, arXiv:1109.3207
+
+%\bibitem[Stewart et al.(2009)]{stewart09} 
+%Stewart, K.~R., Bullock, J.~S., Wechsler, R.~H., \& Maller, A.~H.\
+%2009, \apj, 702, 307
+
+%\bibitem[Stewart et al.(2011a)]{stewart11a} 
+%Stewart, K.~R., Kaufmann, T., Bullock, J.~S., et al.\ 2011, \apjl,
+%735, L1
+
+%\bibitem[Stewart et al.(2011)]{stewart11b} 
+%Stewart, K.~R., Kaufmann, T., Bullock, J.~S., et al.\ 2011, \apj, 738, 39
+
+%\bibitem[Stocke {\etal}(2004)]{stocke04}
+%Stocke, J. T., Keeney, B. A., McLin, K., Rosenberg, J. L., Weymann, R
+%J., \& Giroux, M. L. 2004, ApJ, 609, 94
+
+%\bibitem[Swaters, Sancisi \& van der Hulst(1997)]{swaters97}
+%Swaters, R. A., Sancisi, R., \& van der Hulst, J. M. 1997, ApJ, 491, 140
+
+%\bibitem[Thom et al.(2011)]{thom11} 
+%Thom, C., Werk, J.~K., Tumlinson, J., et al.\ 2011, \apj, 736, 1
+
+%\bibitem[Tinker \& Chen(2008)]{tinker08} 
+%Tinker, J.~L., \& Chen, H.-W.\ 2008, ApJ, 679, 1218 
+
+%\bibitem[Tremonti {\etal}(2007)]{tremonti07} 
+%Tremonti, C.~A., Moustakas, J., \& Diamond-Stanic, A.~M.\ 2007, ApJL,
+%663, L77
+
+%\bibitem[Tripp \& Bowen(2005)]{tripp-china}
+%Tripp, T. M., \& Bowen, D. V. 2005, in {\it Probing Galaxies through
+%Quasar Absorption Lines}, IAU 199 Proceedings, eds.\ P. R. Williams,
+%C.--G. Shu, \& B. M\'{e}nard (Cambridge: Cambridge University Press),
+%p.\ 5
+
+%\bibitem[Tripp et al.(2005)]{tripp05} 
+%Tripp, T.~M., Jenkins, E.~B., Bowen, D.~V., et al.\ 2005, \apj, 619, 714
+
+%\bibitem[Tumlinson et al.(2011)]{tumlinson11} 
+%Tumlinson, J., Thom, C., Werk, J.~K., et al.\ 2011, arXiv:1111.3980
+
+%\bibitem[Turnshek et al.(2003)]{turnshek03} 
+%Turnshek, D.~A., Rao, S.~M., Ptak, A.~F., Griffiths, R.~E., \& Monier,
+%E.~M.\ 2003, ApJ, 590, 730
+
+%\bibitem[van de Voort \& Schaye(2011)]{freeke11b} 
+%van de Voort, F., \& Schaye, J.\ 2011, arXiv:1111.5039
+
+%\bibitem[van de Voort et al.(2011)]{freeke11a}
+% van de Voort, F., Schaye, J., Booth, C.~M., Haas, M.~R., \& Dalla
+%Vecchia, C.\ 2011, \mnras, 414, 2458
+
+%\bibitem[Vogt {\etal}(1994)]{vogt94}
+%Vogt, S. S., {\etal} 1994, SPIE, 2198, 362
+
+%\bibitem[Weiner {\etal}(2009)]{weiner09} 
+%Weiner, B.~J., et al.\ 2009, ApJ, 692, 187
+
+%\bibitem[Wiersma et al.(2009)]{wiersma09} 
+%Wiersma, R.~P.~C., Schaye, J., \& Smith, B.~D.\ 2009, \mnras, 393, 99
+
+%\bibitem[Wolfe et al.(2003)]{wolfe03} 
+%Wolfe, A.~M., Gawiser, E., \& Prochaska, J.~X.\ 2003, ApJ, 593, 235
+
+%\bibitem[Wolfe et al.(1986)]{wolfe86} 
+%Wolfe, A.~M., Turnshek, D.~A., Smith, H.~E., \& Cohen, R.~D.\ 1986, ApJS, 61, 249
+
+%\bibitem[Wolfire et al.(1995)]{wolfire95} 
+%Wolfire, M.~G., Hollenbach, D., McKee, C.~F., Tielens, A.~G.~G.~M., \&
+%Bakes, E.~L.~O.\ 1995, ApJ, 443, 152
+
+%\bibitem[Whitmore(1995)]{whitmore95}
+%Whitmore B., 1995, Photometry with the WFPC2. In: Koratkar A., Leitherer C. (eds.) Calibrating Hubble Space Telescope: Post servicing mission, STScI, Baltimore
+
+%\bibitem[Whyte {\etal}(2002)]{whyte02}
+%Whyte, L. F., Abraham, R. G., Merrifield, M. R., Eskridge, P. B., Frogel, J. A., \& Pogge, R. W. 2002, MNRAS, 336, 1281
+
+%\bibitem[White \& Rees(1978)]{white78} 
+%White, S.~D.~M., \& Rees, M.~J.\ 1978, MNRAS, 183, 341 
+
+%\bibitem[Whiting et al.(2006)]{whiting06} 
+%Whiting, M.~T., Webster, R.~L., \& Francis, P.~J.\ 2006, MNRAS, 368,
+%341
+
+%\bibitem[Willmer {\etal}(2005)]{willmer05}
+%Willmer, C. N. A., {\etal} 2005, ApJ, submitted (astro--ph/0506041)
+
+%\bibitem[Yanny(1990)]{yanny90}
+%Yanny, B. 1990, ApJ, 351, 396
+
+%\bibitem[York {\etal}(1986)]{york86} 
+%York, D.~G., Dopita, M., Green, R., \& Bechtold, J.\ 1986, ApJ, 311,
+%610
+
+%\bibitem[Zabludoff \& Mulchaey(1998)]{zabludoff98} 
+%Zabludoff, A.~I., \& Mulchaey, J.~S.\ 1998, ApJ, 496, 39
+
+%\bibitem[Zonak {\etal}(2004)]{zonak04} 
+%Zonak, S. G., Charlton, J. C., Ding, J., \& Churchill, C. W. 2004,
+%ApJ, 606, 196
+
+%\bibitem[Zheng {\etal}(2005)]{zheng05} 
+%Zheng, X.Z., Hammer, F., Flores, H., Ass\'{e}mat, F., \& Rawat, A. 2005, A\&A, 435, 507
+
+%\bibitem[Zibetti {\etal}(2007)]{zibetti07}
+%Zibetti, S., M{\'e}nard, B., Nestor, D.~B., Quider, A.~M., Rao, S.~M., \& Turnshek, 
+%D.~A.\ 2007, ApJ, 658, 161 
+
+%\bibitem[Zibetti {\etal}(2005)]{zibetti05} 
+%Zibetti, S., M{\'e}nard, B., Nestor, D., \& Turnshek, D.\ 2005, ApJ,
+%631, L105
+
+%\bibitem[Zych et al.(2009)]{zych09} 
+%Zych, B.~J., Murphy, M.~T., Hewett, P.~C., \& Prochaska, J.~X.\ 2009,
+%MNRAS, 392, 1429
+
+%\bibitem[Zwaan et al.(2008)]{zwaan08} 
+%Zwaan, M., Walter, F., Ryan-Weber, E., Brinks, E., de Blok, W.~J.~G.,
+%\& Kennicutt, R.~C.\ 2008, AJ, 136, 2886
+
+
+\end{thebibliography}
+
+
+\end{document}
+
+
